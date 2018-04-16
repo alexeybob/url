@@ -51,3 +51,20 @@ echo aburl($url, [
     "fragment" => "shop"
 ]);
 ```
+
+### Example 3
+```php
+$url = "http://username:password@hostname:9090/segment1/segment2/segment3/segment4/segment5/segment6?arg1=value1&arg2=value2&arg3=value3&arg4=value4&arg5=value5#anchor";
+
+// result: https://test.com
+echo aburl($url, [
+    "scheme" => "https",
+    "host" => "test.com",
+    "port" => null,
+    "user" => null,
+    "pass" => null,
+    "path" => null,
+    "query" => null,
+    "fragment" => null
+]);
+```
