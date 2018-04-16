@@ -20,7 +20,7 @@ final class UserComponent extends Abstracts\ComponentAbstract implements Interfa
      *
      * @var string
      */
-    private $validationRule = '/^[a-z\d_]{5,20}$/i';
+    private $validationRule = '/^[a-z\d_\.]{5,20}$/i';
     
     
     

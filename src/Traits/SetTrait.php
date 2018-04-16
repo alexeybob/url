@@ -12,10 +12,10 @@ trait SetTrait
     /**
      * 
      * @param string $name
-     * @param string $value
+     * @param string|integer|null $value
      * @return $this
      */
-    public function __set(string $name, string $value)
+    public function __set(string $name, $value)
     {
         $setter = $this->createMethodName('set', $name);
 

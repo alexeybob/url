@@ -13,9 +13,7 @@ abstract class ComponentAbstract
      */
     public function has() : bool
     {
-        if (null !== $this->value) {
-            return true;
-        } elseif (
+        if (
             is_array($this->value)
             && count($this->value) > 0
         ) {
