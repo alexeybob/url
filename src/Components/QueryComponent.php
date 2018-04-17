@@ -37,7 +37,7 @@ final class QueryComponent extends Abstracts\ComponentAbstract implements Interf
      * 
      * @param string|null $value
      */
-    public function set($value) : void
+    public function set($value)
     {
         if ($this->validate($value)) {
             
@@ -53,7 +53,7 @@ final class QueryComponent extends Abstracts\ComponentAbstract implements Interf
      * @return boolean
      * @throws \Exception
      */
-    public function validate($value) : bool
+    public function validate($value)
     {
         if (null === $value) {
             return true;
@@ -70,7 +70,7 @@ final class QueryComponent extends Abstracts\ComponentAbstract implements Interf
      * 
      * @param string $name
      */
-    public function remove($name) : void
+    public function remove($name)
     {
         if (isset($this->value[$name])) {
             unset($this->value[$name]);
@@ -82,7 +82,7 @@ final class QueryComponent extends Abstracts\ComponentAbstract implements Interf
      * @param string $name
      * @param string|integer $value
      */
-    public function add($name, $value) : void
+    public function add($name, $value)
     {
         $this->value[$name] = $value;
     }
@@ -91,7 +91,7 @@ final class QueryComponent extends Abstracts\ComponentAbstract implements Interf
      * 
      * @return string
      */
-    public function getStringValue() : string
+    public function getStringValue()
     {
         return is_array($this->value) ? http_build_query($this->value) : '';
     }

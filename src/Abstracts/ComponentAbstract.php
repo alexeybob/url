@@ -11,7 +11,7 @@ abstract class ComponentAbstract
      * 
      * @return boolean
      */
-    public function has() : bool
+    public function has()
     {
         if (
             is_array($this->value)

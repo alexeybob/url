@@ -25,7 +25,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\SchemeComponent
      */
-    private function getScheme() : Components\SchemeComponent
+    private function getScheme()
     {
         return $this->_scheme;
     }
@@ -34,7 +34,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\HostComponent
      */
-    private function getHost() : Components\HostComponent
+    private function getHost()
     {
         return $this->_host;
     }
@@ -43,7 +43,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\PortComponent
      */
-    private function getPort() : Components\PortComponent
+    private function getPort()
     {
         return $this->_port;
     }
@@ -52,7 +52,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\UserComponent
      */
-    private function getUser() : Components\UserComponent
+    private function getUser()
     {
         return $this->_user;
     }
@@ -61,7 +61,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\PassComponent
      */
-    private function getPass() : Components\PassComponent
+    private function getPass()
     {
         return $this->_pass;
     }
@@ -70,7 +70,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\PathComponent
      */
-    private function getPath() : Components\PathComponent
+    private function getPath()
     {
         return $this->_path;
     }
@@ -79,7 +79,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\QueryComponent
      */
-    private function getQuery() : Components\QueryComponent
+    private function getQuery()
     {
         return $this->_query;
     }
@@ -88,7 +88,7 @@ trait GetTrait
      * 
      * @return \AB\Url\Components\FragmentComponent
      */
-    private function getFragment() : Components\FragmentComponent
+    private function getFragment()
     {
         return $this->_fragment;
     }

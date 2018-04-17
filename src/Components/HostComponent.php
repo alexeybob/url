@@ -38,7 +38,7 @@ final class HostComponent extends Abstracts\ComponentAbstract implements Interfa
      * 
      * @param string|null $value
      */
-    public function set($value) : void
+    public function set($value)
     {
         if ($this->validate($value)) {
             $this->value = $value;
@@ -51,7 +51,7 @@ final class HostComponent extends Abstracts\ComponentAbstract implements Interfa
      * @return boolean
      * @throws \Exception
      */
-    public function validate($value) : bool
+    public function validate($value)
     {
         if (0 === preg_match($this->validationRule, $value, $matches, PREG_OFFSET_CAPTURE)) {
             throw new \Exception('Invalid host "' . $value . '"');
@@ -64,7 +64,7 @@ final class HostComponent extends Abstracts\ComponentAbstract implements Interfa
      * 
      * @return string
      */
-    public function getStringValue() : string
+    public function getStringValue()
     {
         return (string)$this->value;
     }

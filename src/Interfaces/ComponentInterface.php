@@ -14,17 +14,17 @@ interface ComponentInterface
      * @return boolean
      * @throws \Exception
      */
-    public function validate($value) : bool;
+    public function validate($value);
     
     /**
      * 
      * @param string|null $value
      */
-    public function set($value) : void;
+    public function set($value);
     
     /**
      * 
      * @return string
      */
-    public function getStringValue() : string;
+    public function getStringValue();
 }

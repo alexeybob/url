@@ -37,7 +37,7 @@ final class PathComponent extends Abstracts\ComponentAbstract implements Interfa
      * 
      * @param string|null $value
      */
-    public function set($value) : void
+    public function set($value)
     {
         if ($this->validate($value)) {
             if (null !== $value) {
@@ -54,7 +54,7 @@ final class PathComponent extends Abstracts\ComponentAbstract implements Interfa
      * @return boolean
      * @throws \Exception
      */
-    public function validate($value) : bool
+    public function validate($value)
     {
         if (null === $value) {
             return true;
@@ -71,7 +71,7 @@ final class PathComponent extends Abstracts\ComponentAbstract implements Interfa
      * 
      * @param string $segment
      */
-    public function remove($segment) : void
+    public function remove($segment)
     {
         if (isset($this->value[$segment])) {
             unset($this->value[$segment]);
@@ -83,7 +83,7 @@ final class PathComponent extends Abstracts\ComponentAbstract implements Interfa
      * @param string $segment
      * @param string|integer $value
      */
-    public function add($segment, $value) : void
+    public function add($segment, $value)
     {
         $this->value[$segment] = $value;
     }
@@ -92,7 +92,7 @@ final class PathComponent extends Abstracts\ComponentAbstract implements Interfa
      * 
      * @return string
      */
-    public function getStringValue() : string
+    public function getStringValue()
     {
         return (null !== $this->value) ? implode('/', $this->value) : '';
     }

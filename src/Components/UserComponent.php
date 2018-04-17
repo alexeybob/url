@@ -37,7 +37,7 @@ final class UserComponent extends Abstracts\ComponentAbstract implements Interfa
      * 
      * @param string|null $value
      */
-    public function set($value) : void
+    public function set($value)
     {
         if ($this->validate($value)) {
             $this->value = $value;
@@ -50,7 +50,7 @@ final class UserComponent extends Abstracts\ComponentAbstract implements Interfa
      * @return boolean
      * @throws \Exception
      */
-    public function validate($value) : bool
+    public function validate($value)
     {
         if (null === $value) {
             return true;
@@ -67,7 +67,7 @@ final class UserComponent extends Abstracts\ComponentAbstract implements Interfa
      * 
      * @return string
      */
-    public function getStringValue() : string
+    public function getStringValue()
     {
         return (string)$this->value;
     }

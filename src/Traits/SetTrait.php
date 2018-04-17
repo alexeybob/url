@@ -28,7 +28,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setScheme($value) : void
+    private function setScheme($value)
     {
         $this->_scheme = new Components\SchemeComponent($value);
     }
@@ -37,7 +37,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setHost($value) : void
+    private function setHost($value)
     {
         $this->_host = new Components\HostComponent($value);
     }
@@ -46,7 +46,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setPort($value) : void
+    private function setPort($value)
     {
         $this->_port = new Components\PortComponent($value);
     }
@@ -55,7 +55,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setUser($value) : void
+    private function setUser($value)
     {
         $this->_user = new Components\UserComponent($value);
     }
@@ -64,7 +64,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setPass($value) : void
+    private function setPass($value)
     {
         $this->_pass = new Components\PassComponent($value);
     }
@@ -73,7 +73,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setPath($value) : void
+    private function setPath($value)
     {
         $this->_path = new Components\PathComponent($value);
     }
@@ -82,7 +82,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setQuery($value) : void
+    private function setQuery($value)
     {
         $this->_query = new Components\QueryComponent($value);
     }
@@ -91,7 +91,7 @@ trait SetTrait
      * 
      * @param string|null $value
      */
-    private function setFragment($value) : void
+    private function setFragment($value)
     {
         $this->_fragment = new Components\FragmentComponent($value);
     }
